@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9dc8e5965e.js" crossorigin="anonymous"></script>
+    <link rel="website icon" type="png" href="pics/logo.png">
+    <title>Projects</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="pics/logo.png" class="logo">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="achievements.html">Achievements</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!---------------------projects-------------------->
+<div id="Projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div>
+                <i class="fa-solid fa-mobile"></i>
+                <h2>HCI Output Based Project</h2>
+                <p>Created a Prototyped Design for a System (Mobile-Based)</p>
+                <a href="https://www.figma.com/proto/DGze2MwVB70Qb43xhsj9ma/Untitled?node-id=20-3&starting-point-node-id=20%3A3" target="_blank">Click here to see project</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-business-time"></i>
+                <h2>Multimedia Project 1</h2>
+                <p>Created a Business Banner</p>
+                <a href="https://drive.google.com/file/d/1ce_cQ9dBi8ICp0kXLNVh1uROOGqb0K0z/view?usp=sharing" target="_blank">Click here to see project</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-uncharted"></i>
+                <h2>Multimedia Project 2</h2>
+                <p>Created a simple motion tween using five objects that can be found in the software</p>
+                <a href="https://drive.google.com/file/d/1m_7lxFuOeXR52mZmfhZAtuNttuMFHkVU/view?usp=drive_link" target="_blank">Click here to see project</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-shapes"></i>
+                <h2>Multimedia Project 3</h2>
+                <p>Created a simple shape tween, shape must change into five different shapes</p>
+                <a href="https://drive.google.com/file/d/131T-AAH1CxyJQevhIciSNEp1oZiujODF/view?usp=drive_link" target="_blank">Click here to see project</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-network-wired"></i>
+                <h2>Fundamentals of Computer Networking Project 1</h2>
+                <p>Created a computer network layout and design for architecture for a business or organization.</p>
+                <a href="https://drive.google.com/file/d/1INghn5o8dT2kixIMlHX58YJf_DvcDISq/view?usp=drive_link" target="_blank">Click here to see project</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-sitemap"></i>
+                <h2>Fundamentals of Computer Networking Project 2</h2>
+                <p>Created a network structure for star topology.</p>
+                <a href="https://drive.google.com/file/d/1VYjllsW585IN5kLafsREdDvn0FvacxX_/view?usp=drive_link" target="_blank">Click here to see project</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+</body>
+</html>
